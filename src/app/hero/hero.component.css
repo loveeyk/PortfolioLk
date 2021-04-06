@@ -1,0 +1,94 @@
+.hero_container {
+    height: 100%;
+    background: linear-gradient( 39deg, gainsboro, #ffe84538);
+    background-attachment: fixed
+}
+
+
+/* .heading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(188, 143, 143, 0.383);
+    height: 75vh;
+} */
+
+.heading {
+    font-family: "Montserrat";
+    text-align: center;
+    color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    letter-spacing: 1px;
+}
+
+h1 {
+    background-image: url("https://media.giphy.com/media/l2SqcmBJxk04qUYrC/giphy.gif");
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 75px;
+    margin: 10px 0;
+}
+
+
+/* styling my button */
+
+.white-mode {
+    text-decoration: none;
+    padding: 7px 10px;
+    background-color: rgb(93, 7, 7);
+    border-radius: 3px;
+    color: #FFF;
+    transition: .35s ease-in-out;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-family: "Montserrat";
+}
+
+.white-mode:hover {
+    background-color: #FFF;
+    color: rgb(93, 7, 7);
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+h2 span {
+    transition: 0.5s;
+}
+
+h2:hover span:nth-child(1) {
+    margin: 20px;
+}
+
+h2:hover span:nth-child(1):after {
+    content: "'";
+}
+
+h2:hover span:nth-child(2) {
+    margin: 40px;
+}
+
+h2:hover span {
+    color: black;
+    text-shadow: 0 0 5px rgb(238, 230, 159), 0 0 20px rgb(238, 222, 149), 0 0 40px #fff, 0 0 80px #fff, 0 0 120px #fff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}

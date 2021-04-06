@@ -1,0 +1,10 @@
+.phonewrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.shadow {
+    box-shadow: 1px 1px 2px black;
+}

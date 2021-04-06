@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat";
 }
 
 
@@ -11,4 +12,12 @@
 
 .center {
     text-align: center;
+}
+
+.mr-auto {
+    margin-right: auto
+}
+
+.container {
+    padding: 1rem;
 }

@@ -1,0 +1,16 @@
+.bar {
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.418);
+    width: 100%;
+    color: white;
+    min-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.bar i {
+    padding: 0 1rem;
+}

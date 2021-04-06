@@ -1,11 +1,24 @@
 .apps_container {
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 0.9rem;
+    justify-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    background: radial-gradient(#19dac869, #1872e2a6);
+    padding-top: 30px;
+}
+
+.outlined {
+    -webkit-text-stroke: 1px!important;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.582)!important;
 }
 
 .apps_wrapper {
-    border: 1px solid rgba(144, 140, 140, 0.678);
-    box-shadow: rgb(87, 84, 84) 2px 2px 5px;
+    box-shadow: rgb(66 64 64 / 38%) 2px 2px 0px;
     border-radius: 10px;
     width: 80px;
     height: 75px;
@@ -13,30 +26,40 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: x-large;
+    font-size: 2rem;
 }
 
 a {
-    color: rgb(12, 12, 12);
+    color: rgb(251 251 251);
     text-decoration: none;
 }
 
 #color_red {
-    background: linear-gradient(rgba(255, 255, 255, 0.568), rgba(139, 0, 0, 0.657));
+    background: #ff2c2c;
+    border: 0.1px solid #1f1f1f;
+    -webkit-text-stroke-color: black;
 }
 
 #color_blue {
-    background: linear-gradient(rgba(255, 255, 255, 0.568), rgba(11, 110, 224, 0.575));
+    background: #0057ff;
+    border: 0.1px solid #1f1f1f;
+    -webkit-text-stroke-color: black;
 }
 
 #color_orange {
-    background: linear-gradient(rgba(255, 255, 255, 0.568), rgba(255, 166, 0, 0.609));
+    background: #e600ff;
+    border: 0.1px solid #1f1f1f;
+    -webkit-text-stroke-color: black;
 }
 
 #color_green {
-    background: linear-gradient(rgba(255, 255, 255, 0.568), rgba(43, 87, 18, 0.555));
+    background: #4eff8f;
+    border: 0.1px solid #1f1f1f;
+    -webkit-text-stroke-color: black;
 }
 
 #color_yellow {
-    background: linear-gradient(rgba(255, 255, 255, 0.568), rgba(233, 219, 28, 0.575));
+    background: yellow;
+    border: 0.1px solid #1f1f1f;
+    -webkit-text-stroke-color: black;
 }

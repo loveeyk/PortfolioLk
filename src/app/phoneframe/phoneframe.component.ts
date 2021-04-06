@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, OnInit, HostListener, Input } from '@angular/core';
 
 @Component({
   selector: 'app-phoneframe',
@@ -8,6 +8,7 @@ import { Component, OnInit, HostListener } from '@angular/core';
 export class PhoneframeComponent implements OnInit {
   public screenWidth: any;
   public screenHeight: any;
+  @Input() slided:any;
 
   constructor() { }
 

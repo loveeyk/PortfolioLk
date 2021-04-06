@@ -3,10 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ContactComponent } from './contact/contact.component';
 import { CVComponent } from './cv/cv.component';
+import { HeroComponent } from './hero/hero.component';
 import { HomeComponent } from './home/home.component';
 import { MyskillsComponent } from './myskills/myskills.component';
 import { ProjectsComponent } from './projects/projects.component';
 
+// let isUnlocked = false;
 const routes: Routes = [
   {
     path:"", component: HomeComponent
@@ -34,4 +36,8 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+
+ 
+
+ }

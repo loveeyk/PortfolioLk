@@ -14,6 +14,9 @@ import { PhoneframeComponent } from './phoneframe/phoneframe.component';
 import { MyskillsComponent } from './myskills/myskills.component';
 import { CVComponent } from './cv/cv.component';
 import { BarComponent } from './bar/bar.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SkillbarComponent } from './skillbar/skillbar.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +31,14 @@ import { BarComponent } from './bar/bar.component';
     PhoneframeComponent,
     MyskillsComponent,
     CVComponent,
-    BarComponent
+    BarComponent,
+    SkillbarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

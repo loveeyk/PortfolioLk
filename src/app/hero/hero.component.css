@@ -1,7 +1,11 @@
 .hero_container {
     height: 100%;
     background: linear-gradient( 39deg, gainsboro, #ffe84538);
-    background-attachment: fixed
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 
@@ -14,7 +18,7 @@
     height: 75vh;
 } */
 
-.heading {
+.inner-wrapper {
     font-family: "Montserrat";
     text-align: center;
     color: #FFF;
@@ -33,7 +37,7 @@ h1 {
     -moz-background-clip: text;
     -webkit-background-clip: text;
     text-transform: uppercase;
-    font-size: 75px;
+    font-size: 3rem;
     margin: 10px 0;
 }
 

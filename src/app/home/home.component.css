@@ -10,6 +10,9 @@
     align-items: center;
     background: radial-gradient(#19dac869, #1872e2a6);
     padding-top: 30px;
+    position: absolute;
+    width: 100%;
+    top: 0;
 }
 
 .outlined {
@@ -17,7 +20,7 @@
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.582)!important;
 }
 
-.apps_wrapper {
+.app_wrapper {
     box-shadow: rgb(66 64 64 / 38%) 2px 2px 0px;
     border-radius: 10px;
     width: 80px;

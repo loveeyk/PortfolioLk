@@ -1,1 +1,65 @@
-<p>contact works!</p>
+<div class="heading">
+    <h1>Contact Me</h1>
+</div>
+<form [formGroup]="info">
+
+    <div class="form_container">
+
+        <div class="input_wrapper">
+
+            <label>
+  
+      First Name:</label>
+
+            <input type="text" formControlName="firstName" required>
+
+        </div>
+
+
+        <div class="input_wrapper">
+            <label>
+  
+      Last Name: </label>
+
+            <input type="text" formControlName="lastName" required>
+
+        </div>
+
+
+        <div class="input_wrapper">
+            <label>
+  
+      Email:  </label>
+
+            <input type="text" formControlName="email" required>
+        </div>
+
+
+        <div class="input_wrapper">
+            <label>
+  
+        Message: </label>
+
+            <input class="message" type="text" formControlName="message">
+
+        </div>
+
+
+
+
+
+        <button class="btn" type="submit"><a class="aTag" href="mailto:karir.loveleen@gmail.com">Contact Me</a></button>
+
+    </div>
+
+</form>
+
+<div class="icons">
+
+    <a href="https://github.com/loveeyk"><i class="fab fa-github highlight_git"></i></a>
+    <a href="https://www.linkedin.com/in/loveleen-karir/"><i class="fab fa-linkedin-in highlight_li"></i></a>
+    <a href="https://www.facebook.com/LoveleenKarir/"><i class="fab fa-facebook highlight_fb"></i></a>
+    <a href="https://stackoverflow.com/users/15584681/loveleen-karir?tab=profile"><i class="fab fa-stack-overflow highlight_so"></i></a>
+
+
+</div>

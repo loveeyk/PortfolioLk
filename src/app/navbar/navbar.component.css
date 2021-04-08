@@ -1,7 +1,10 @@
 .navbar {
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     /* padding: 2rem; */
+    background: none;
     font-family: "Montserrat";
+    z-index: 3;
+    position: relative;
 }
 
 .container_navbar {
@@ -16,11 +19,15 @@
 }
 
 .content_wrapper__item {
-    padding: 2rem;
+    padding: 2.7rem;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content_wrapper__item:hover {
-    background: #ccc;
+    background: #efefef;
 }
 
 a {
@@ -39,6 +46,7 @@ a {
     /* font-size: xx-large; */
     transform: rotateX(360deg);
     transition: transform 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+    background: transparent;
 }
 
 #logo:hover a {

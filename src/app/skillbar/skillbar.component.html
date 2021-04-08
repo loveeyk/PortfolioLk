@@ -1,0 +1,10 @@
+<div class="skillbar-wrapper">
+    <i class="{{tagstring}}" [style.color]="color"></i>
+    <img class="tag-image" *ngIf="image" src="{{image}}">
+    <div class="skillbar">
+        <div [style.width.%]="level" [style.background]="color" class="skillbar_inner">
+        </div>
+        <div class="skillbar_outer">
+        </div>
+    </div>
+</div>

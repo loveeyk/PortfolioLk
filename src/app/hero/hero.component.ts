@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, EventEmitter, OnChanges, OnInit } from '@angular/core';
 
 
 @Component({
@@ -9,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroComponent implements OnInit {
 
-  constructor() {
+  sliderposition = 0;
+  // @Output() sliderpositionChange:EventEmitter<number> =new EventEmitter<HeroComponent>();
+
+   constructor() {
   
    }
-
+  handleMouseUp(e:any){
+    if(e.target.value >= 90){
+      
+    }
+    this.sliderposition = 0;
+  };
+   
   ngOnInit(): void {
   }
 

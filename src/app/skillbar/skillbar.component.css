@@ -1,0 +1,44 @@
+.skillbar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3.5rem;
+}
+
+.tag-image {
+    width: 15%;
+}
+
+.skillbar {
+    height: 32px;
+    position: relative;
+    /* border: 1px solid black; */
+    /* border-radius: 15px; */
+    width: 100%;
+    overflow: hidden;
+}
+
+.skillbar_inner {
+    height: 100%;
+    width: 80%;
+    background: red;
+    border-radius: 2rem;
+}
+
+.skillbar_outer {
+    width: 100%;
+    height: 32px;
+    position: absolute;
+    border: 1px solid black;
+    top: 0;
+    border-radius: 2rem;
+}
+
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 400;
+    /* width: 10%; */
+    text-align: center;
+    font-size: xx-large;
+    width: 20%;
+}

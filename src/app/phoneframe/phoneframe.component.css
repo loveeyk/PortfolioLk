@@ -8,9 +8,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    top: 0;
     height: 100%;
-    z-index: 1;
+    z-index: 5;
 }
 
 .shadow {
@@ -25,6 +24,35 @@
 .marvel-device.ipad.silver {
     background: #ffffff!important;
     box-shadow: 1px 2px 8px #000!important;
+}
+
+@media (max-width: 802px) {
+    .marvel-device.ipad.silver {
+        width: 410px;
+        height: 550px;
+    }
+    .screen a {
+        margin-left: 0!important;
+    }
+}
+
+.screen a {
+    background: rgb(0 0 0 / 34%);
+    border-radius: 10px;
+    line-height: 4rem;
+    padding: 0 1rem;
+    text-decoration: none;
+    color: white;
+    z-index: 1000;
+    position: absolute;
+    top: 6%;
+    left: 0;
+    margin-left: -67px;
+    transition: all 0.3s ease;
+}
+
+.screen a:hover {
+    margin-left: 0;
 }
 
 

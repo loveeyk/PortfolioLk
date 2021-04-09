@@ -1,65 +1,69 @@
-<div class="heading">
-    <h1>Contact Me</h1>
-</div>
-<form [formGroup]="info">
+<div class="contactpage">
 
-    <div class="form_container">
+    <form class="info" [formGroup]="info">
 
-        <div class="input_wrapper">
+        <div class="form_container">
+            <div class="heading">
+                <h1>Contact Me</h1>
+            </div>
+            <div class="input_wrapper">
 
-            <label>
-  
-      First Name:</label>
+                <label>
+    
+                    First Name:</label>
 
-            <input type="text" formControlName="firstName" required>
+                <input class="inputtext" type="text" formControlName="firstName" required>
 
+            </div>
+
+
+            <div class="input_wrapper">
+                <label>
+    
+                    Last Name: </label>
+
+                <input class="inputtext" type="text" formControlName="lastName" required>
+
+            </div>
+
+
+            <div class="input_wrapper">
+                <label>
+    
+                    Email: </label>
+
+                <input class="inputtext" type="text" formControlName="email" required>
+            </div>
+
+
+            <div class="input_wrapper">
+                <label for="message">
+                    Message: </label>
+                <textarea class="inputtext" id="message" name="message" formControlName="message" rows="4" cols="19"></textarea>
+                <!-- <input class="message" type="text" id="message" formControlName="message"> -->
+
+            </div>
+
+
+
+
+
+            <button class="btn" type="submit"><a class="aTag"
+                    href="mailto:karir.loveleen@gmail.com">Contact Me</a></button>
         </div>
 
+    </form>
 
-        <div class="input_wrapper">
-            <label>
-  
-      Last Name: </label>
+    <div class="icons">
 
-            <input type="text" formControlName="lastName" required>
+        <a href="https://github.com/loveeyk"><i class="fab fa-github highlight_git"></i></a>
+        <a href="https://www.linkedin.com/in/loveleen-karir/"><i class="fab
+                fa-linkedin-in highlight_li"></i></a>
+        <a href="https://www.facebook.com"><i class="fab fa-facebook
+                highlight_fb"></i></a>
+        <a href="https://stackoverflow.com/users/15584681/loveleen-karir?tab=profile"><i
+                class="fab fa-stack-overflow highlight_so"></i></a>
 
-        </div>
-
-
-        <div class="input_wrapper">
-            <label>
-  
-      Email:  </label>
-
-            <input type="text" formControlName="email" required>
-        </div>
-
-
-        <div class="input_wrapper">
-            <label>
-  
-        Message: </label>
-
-            <input class="message" type="text" formControlName="message">
-
-        </div>
-
-
-
-
-
-        <button class="btn" type="submit"><a class="aTag" href="mailto:karir.loveleen@gmail.com">Contact Me</a></button>
 
     </div>
-
-</form>
-
-<div class="icons">
-
-    <a href="https://github.com/loveeyk"><i class="fab fa-github highlight_git"></i></a>
-    <a href="https://www.linkedin.com/in/loveleen-karir/"><i class="fab fa-linkedin-in highlight_li"></i></a>
-    <a href="https://www.facebook.com/LoveleenKarir/"><i class="fab fa-facebook highlight_fb"></i></a>
-    <a href="https://stackoverflow.com/users/15584681/loveleen-karir?tab=profile"><i class="fab fa-stack-overflow highlight_so"></i></a>
-
-
 </div>

@@ -1,0 +1,12 @@
+.projectcard {
+    display: grid;
+    width: 50%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.projectcard .image {
+    background-size: cover;
+}
+
+.projectcard .description {}

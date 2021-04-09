@@ -14,6 +14,9 @@ const routes: Routes = [
     path:"", component: HomeComponent
   },
   {
+path:"lockedScreen", component: HeroComponent
+  },
+  {
     path:"about", component: AboutmeComponent
   },
   {

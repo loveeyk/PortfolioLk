@@ -1,7 +1,26 @@
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 50% 0%;
+    }
+    75% {
+        background-position: 0% 0%
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .hero_container {
     height: 100%;
-    background: linear-gradient( 39deg, gainsboro, #ffe84538);
-    background-attachment: fixed;
+    background: linear-gradient( -45deg, #23120d, #ffffff, #114a5f, #000000);
+    background-size: 400% 400%;
+    animation: gradient 20s ease-in-out infinite;
     position: absolute;
     top: 0;
     left: 0;
@@ -17,6 +36,44 @@
     background-color: rgba(188, 143, 143, 0.383);
     height: 75vh;
 } */
+
+input[type="range"] {
+    width: 30%;
+    margin-top: 2rem;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    background: transparent;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 2rem;
+    background: rgba(204, 204, 204, 0.171);
+    border: none;
+    border-radius: 3px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.371);
+    margin-top: -10px;
+    margin-left: -3px;
+    position: relative;
+    box-shadow: 1px 2px 3px #333;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input {
+    width: 36%;
+}
 
 .inner-wrapper {
     font-family: "Montserrat";

@@ -13,6 +13,8 @@ export class NavbarComponent implements OnInit {
   about = "About me"
   project = "My Projects"
   contact = "Contact me"
+  skills = "My Skills"
+  cv = "CV"
 
   constructor() { }
 

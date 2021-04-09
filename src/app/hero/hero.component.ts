@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnChanges, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnChanges, OnInit, Output } from '@angular/core';
 
 
 @Component({
@@ -9,7 +9,11 @@ import { Component, EventEmitter, OnChanges, OnInit } from '@angular/core';
 export class HeroComponent implements OnInit {
 
   sliderposition = 0;
-  // @Output() sliderpositionChange:EventEmitter<number> =new EventEmitter<HeroComponent>();
+  @Output() notify: EventEmitter<number> = new EventEmitter<number>();
+
+  passData(){
+    this.notify.emit(this.sliderposition)
+  }
 
    constructor() {
   
@@ -17,8 +21,11 @@ export class HeroComponent implements OnInit {
   handleMouseUp(e:any){
     if(e.target.value >= 90){
       
+    }else{
+      this.sliderposition = 0;
     }
-    this.sliderposition = 0;
+    this.passData()
+   
   };
    
   ngOnInit(): void {

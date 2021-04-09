@@ -7,7 +7,10 @@
         </div>
         <div class="top-bar"></div>
         <div class="sleep"></div>
-        <div class="bottom-bar"></div>
+        <div class="bottom-bar">
+
+        </div>
+
         <div class="volume"></div>
         <div class="overflow">
             <div class="shadow shadow--tr"></div>
@@ -16,11 +19,15 @@
             <div class="shadow shadow--bl"></div>
         </div>
         <div class="inner-shadow"></div>
+
         <div class="screen">
+
+            <a routerLink="/">Home</a>
             <app-bar></app-bar>
-            <!-- <app-hero></app-hero> -->
-            <!-- <app-home></app-home> -->
-            <router-outlet></router-outlet>
+            <app-hero *ngIf="!isSlided" (notify)="sliderHandler($event)"></app-hero>
+            <router-outlet *ngIf=" isSlided"></router-outlet>
+
+
         </div>
     </div>
 </div>

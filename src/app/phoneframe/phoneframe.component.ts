@@ -8,12 +8,17 @@ import { Component, OnInit, HostListener, Input } from '@angular/core';
 export class PhoneframeComponent implements OnInit {
   public screenWidth: any;
   public screenHeight: any;
-
+  public isSlided: boolean = false;
   constructor() {}
 
   ngOnInit() {
       this.screenWidth = window.innerWidth;
       this.screenHeight = window.innerHeight;
+  }
+  sliderHandler(data:any){
+    if(data>=90){
+      this.isSlided = true
+    }
   }
  
   @HostListener('window:resize', ['$event'])

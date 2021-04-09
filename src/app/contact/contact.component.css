@@ -1,27 +1,49 @@
+.contactpage {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 2rem;
+    background: radial-gradient(rgba(105, 101, 101, 0.24), rgba(255, 255, 255, 0.404));
+    width: 100%;
+}
+
 .heading {
+    padding: 1.5rem 0;
     text-align: center;
+}
+
+.info {
+    height: 100%;
 }
 
 .form_container {
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
-    background: radial-gradient(rgba(105, 101, 101, 0.24), rgba(255, 255, 255, 0.404));
+    justify-content: flex-start;
+    /* background: radial-gradient(rgba(105, 101, 101, 0.24), rgba(255, 255, 255, 0.404)); */
     height: 100%;
 }
 
 .input_wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-self: center;
-    padding: 1rem;
-    width: 50%;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    width: 100%;
+    max-width: 560px;
 }
 
 .message {
-    height: 100px;
+    padding: 1rem;
+}
+
+.inputtext {
+    padding: 0.7rem;
+    width: 70%;
 }
 
 .btn {
@@ -34,6 +56,8 @@
     border: 1px solid transparent;
     border-radius: 10px;
     color: rgb(255, 255, 255);
+    margin: 1.5rem 0;
+    transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
@@ -42,8 +66,13 @@
 
 .icons {
     display: flex;
-    justify-content: space-between;
-    background: radial-gradient(rgba(255, 255, 255, 0.404), rgba(0, 0, 0, 0.438));
+    justify-content: space-evenly;
+    background: radial-gradient(rgba(255, 255, 255, 0.204), rgba(0, 0, 0, 0.338));
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0.3rem 0;
 }
 
 .fab {
@@ -51,27 +80,27 @@
 }
 
 .highlight_git:hover {
-    background: rgb(185, 11, 185);
-    transition: 1s ease-in;
-    color: white;
+    color: rgb(185, 11, 185);
+    transition: 0.3s ease-in;
+    /* color: white; */
 }
 
 .highlight_li:hover {
-    background: rgb(52, 115, 216);
-    transition: 1s ease-in;
-    color: white;
+    color: rgb(35, 77, 144);
+    transition: 0.3s ease-in;
+    /* color: white; */
 }
 
 .highlight_fb:hover {
-    background: rgb(9, 86, 230);
-    transition: 1s ease-in;
-    color: white;
+    color: rgb(9, 86, 230);
+    transition: 0.3s ease-in;
+    /* color: white; */
 }
 
 .highlight_so:hover {
-    background: rgb(240, 160, 33);
-    transition: 1s ease-in;
-    color: white;
+    color: rgb(240, 160, 33);
+    transition: 0.3s ease-in;
+    /* color: white; */
 }
 
 a {

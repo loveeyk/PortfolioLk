@@ -17,6 +17,7 @@ import { BarComponent } from './bar/bar.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SkillbarComponent } from './skillbar/skillbar.component';
+import { ProjectcardComponent } from './projectcard/projectcard.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { SkillbarComponent } from './skillbar/skillbar.component';
     MyskillsComponent,
     CVComponent,
     BarComponent,
-    SkillbarComponent
+    SkillbarComponent,
+    ProjectcardComponent
   ],
   imports: [
     BrowserModule,

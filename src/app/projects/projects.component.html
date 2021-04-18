@@ -1,11 +1,16 @@
-<div class="projects-wrapper">
+<div class="projects-wrapper pt-3" *ngFor="let image of projects; let i = index">
 
-    <p>Photographer Webpage</p>
+    <h1 class="heading"><i class="fas fa-project-diagram"></i> {{heading}}</h1>
+
+    <app-projectcard [projectobject]="image"></app-projectcard>
+
+    <!-- <p>Photographer Webpage</p>
     <p>Restaurant Webpage</p>
     <p>Travel Blog Webpage </p>
     <p>News Webpage</p>
-    <p>Moviefactory Webpage</p>
+    <p>Moviefactory Webpage</p> -->
 
-    <span class="info_wrapper">This page is in progress....</span>
+
+    <p class="info_wrapper">click <a href="https://github.com/loveeyk">here</a> to see all my projects on <i class="fab fa-github fs-1"></i></p>
     <!-- <app-projectcard img="https://images.pexels.com/photos/3709370/pexels-photo-3709370.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" text="Photographer Webpage"></app-projectcard> -->
 </div>

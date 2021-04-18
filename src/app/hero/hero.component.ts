@@ -15,18 +15,31 @@ export class HeroComponent implements OnInit {
     this.notify.emit(this.sliderposition)
   }
 
-   constructor() {
-  
-   }
+   constructor() {}
+
+   /**
+    * Resets slider if < 90 otherwise saves
+    * (For Mouse)
+    * @param e the current sliding position
+    */
   handleMouseUp(e:any){
     if(e.target.value >= 90){
-      
+      this.sliderposition = e.target.value
     }else{
       this.sliderposition = 0;
     }
     this.passData()
-   
   };
+
+  /**
+    * Resets slider if < 90 otherwise saves
+    * For Touch
+   * @param e sliding position
+   */
+  handleTouchEnd(e:any){
+   this.sliderposition =  e.target.value >= 90 ? e.target.value: 0;
+   this.passData()
+  }
    
   ngOnInit(): void {
   }

@@ -13,6 +13,7 @@
     background: #c3c1b72e;
     border-bottom: 1px solid #ffffff82;
     box-shadow: 4px 4px 12px 5px #8a8883d1;
+    width: 100%;
 }
 
 @media (max-width: 802px) {
@@ -48,7 +49,7 @@ a {
 }
 
 a:hover {
-    color: rgb(236, 236, 236);
+    color: rgb(109, 106, 106);
     font-size: x-large;
 }
 

@@ -1,7 +1,7 @@
 <div class="hero_container">
     <div class="inner-wrapper">
         <h1>Slide to unlock</h1>
-        <input (mouseup)="handleMouseUp($event)" type="range" [value]="sliderposition" [(ngModel)]="sliderposition" min=" 1 " max="100 " class="slider" id="slider">
+        <input (touchend)="handleTouchEnd($event)" (mouseup)="handleMouseUp($event)" type="range" [value]="sliderposition" [(ngModel)]="sliderposition" min=" 1 " max="100 " class="slider" id="slider">
 
         <!-- 
         <div>

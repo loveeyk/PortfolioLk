@@ -12,7 +12,7 @@ export class NavbarComponent implements OnInit {
   home = "Home"
   about = "About me"
   project = "My Projects"
-  contact = "Contact me"
+  contact = "Hire Me"
   skills = "My Skills"
   cv = "CV"
 

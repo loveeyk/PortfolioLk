@@ -44,11 +44,11 @@
 }
 
 p {
-    padding-top: 2rem;
+    padding-top: 0.5rem;
 }
 
 .content {
-    padding: 2rem;
+    padding: 1rem;
     /* width: 50%; */
     text-align: center;
 }

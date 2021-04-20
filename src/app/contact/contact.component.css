@@ -4,7 +4,6 @@
     top: 0;
     left: 0;
     padding-top: 2rem;
-    background: radial-gradient(rgba(105, 101, 101, 0.24), rgba(255, 255, 255, 0.404));
     width: 100%;
 }
 
@@ -37,6 +36,11 @@
     max-width: 560px;
 }
 
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .message {
     padding: 1rem;
 }
@@ -65,17 +69,13 @@
 
 .icons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     background: rgba(255, 255, 255, 0.411);
     /* width: 100%; */
-    bottom: 0px;
+    bottom: 0;
     /* left: 0; */
-    padding: 0.3rem 0.2rem;
-    position: absolute;
-    right: 0;
     /* text-align: right; */
-    height: 100%;
 }
 
 .fab {

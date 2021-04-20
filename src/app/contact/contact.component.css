@@ -49,34 +49,37 @@
 .btn {
     display: flex;
     align-self: center;
-    background: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-    background-size: cover;
     text-align: center;
     padding: 1rem;
-    border: 1px solid transparent;
+    border: 1px solid rgba(54, 52, 52, 0.418);
     border-radius: 10px;
-    color: rgb(255, 255, 255);
     margin: 1.5rem 0;
+    background-color: rgba(255, 255, 255, 0.486);
     transition: all 0.3s ease-in-out;
+    z-index: 1;
 }
 
 .btn:hover {
-    font-size: larger;
+    background-color: rgba(0, 0, 0, 0.507);
 }
 
 .icons {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    background: radial-gradient(rgba(255, 255, 255, 0.204), rgba(0, 0, 0, 0.338));
-    width: 100%;
+    background: rgba(255, 255, 255, 0.411);
+    /* width: 100%; */
+    bottom: 0px;
+    /* left: 0; */
+    padding: 0.3rem 0.2rem;
     position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0.3rem 0;
+    right: 0;
+    /* text-align: right; */
+    height: 100%;
 }
 
 .fab {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .highlight_git:hover {
@@ -108,7 +111,10 @@ a {
     color: rgb(0, 0, 0);
 }
 
-.aTag {
+a:hover {
     color: white;
-    text-decoration: none;
+}
+
+.highlight:hover {
+    color: black;
 }

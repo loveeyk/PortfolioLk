@@ -14,7 +14,6 @@ export class HeroComponent implements OnInit {
   passData(){
     this.notify.emit(this.sliderposition)
   }
-
    constructor() {}
 
    /**

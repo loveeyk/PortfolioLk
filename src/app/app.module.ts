@@ -12,7 +12,7 @@ import { AboutmeComponent } from './aboutme/aboutme.component';
 import { FooterComponent } from './footer/footer.component';
 import { PhoneframeComponent } from './phoneframe/phoneframe.component';
 import { MyskillsComponent } from './myskills/myskills.component';
-import { CVComponent } from './cv/cv.component';
+
 import { BarComponent } from './bar/bar.component';
 import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -31,7 +31,7 @@ import { ProjectcardComponent } from './projectcard/projectcard.component';
     FooterComponent,
     PhoneframeComponent,
     MyskillsComponent,
-    CVComponent,
+   
     BarComponent,
     SkillbarComponent,
     ProjectcardComponent

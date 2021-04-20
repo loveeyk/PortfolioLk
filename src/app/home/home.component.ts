@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  heading = "Welcome to Loveey's Website"
+ subheading = "click on the apps to navigate" 
+
   constructor() { }
 
   ngOnInit(): void {

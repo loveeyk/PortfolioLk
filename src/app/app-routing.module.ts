@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutmeComponent } from './aboutme/aboutme.component';
 import { ContactComponent } from './contact/contact.component';
-import { CVComponent } from './cv/cv.component';
+
 import { HeroComponent } from './hero/hero.component';
 import { HomeComponent } from './home/home.component';
 import { MyskillsComponent } from './myskills/myskills.component';
@@ -27,10 +27,8 @@ path:"lockedScreen", component: HeroComponent
   },
   {
     path:"skills", component: MyskillsComponent
-  },
-  {
-    path:"cv", component: CVComponent
   }
+  
 
 
 ];

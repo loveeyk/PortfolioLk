@@ -25,7 +25,7 @@
         justify-content: center;
     }
     #logo {
-        width: 100%;
+        display: none;
     }
 }
 
@@ -49,13 +49,13 @@ a {
 }
 
 a:hover {
-    color: rgb(109, 106, 106);
+    color: rgb(133, 128, 128);
     font-size: x-large;
 }
 
 .logo {
     font-size: x-large;
-    text-shadow: black 2px 2px 5px;
+    text-shadow: black 2px 2px 3px;
     /**animation: mymove 5s infinite;*/
     font-weight: bolder;
 }

@@ -4,12 +4,22 @@
     justify-content: center;
     align-items: center;
     /* background: linear-gradient( 180deg, transparent 23%, #00000059 85%, transparent 100%); */
-    background-image: url("../../assets/img/background_image.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
     position: absolute;
-    height: 100%;
+    /* height: 100%; */
     z-index: 5;
+    background-image: url(../../assets/img/cropped.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+@media (max-width: 970px) {
+    .phonewrapper {
+        background: none;
+    }
+    .marvel-device.ipad.landscape {
+        left: 0;
+    }
 }
 
 .shadow {
@@ -28,8 +38,8 @@
 
 @media (max-width: 802px) {
     .marvel-device.ipad.silver {
-        width: 410px;
-        height: 550px;
+        width: 328px;
+        height: 440px;
     }
     .screen a {
         margin-left: 0!important;
@@ -55,8 +65,9 @@
     margin-left: 0;
 }
 
-
-/* .marvel-device.ipad.landscape {
-    height: 432px!important;
-    width: 576px!important;
-} */
+.marvel-device.ipad.landscape {
+    height: 466.38px!important;
+    width: 622.08px!important;
+    right: -14%;
+    top: -7%;
+}

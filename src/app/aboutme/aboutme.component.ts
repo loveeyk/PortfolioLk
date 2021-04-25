@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutmeComponent implements OnInit {
 
-  heading = "Hi, I'm Loveleen !"
-  subheading = "I'm a certified Front End Developer"
+  heading = "Hi, I'm Loveleen ! "
+  subheading = " A certified Front End Developer"
   
   constructor() { }
 

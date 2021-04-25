@@ -1,12 +1,20 @@
 <div class="skillbar-wrapper">
     <div class="tag-wrapper">
-        <i class="{{tagstring}}" [style.color]="color"></i>
+        <i class="{{tagstring}}" [style.color]="primaryColor"></i>
         <img class="tag-image" *ngIf="image" src="{{image}}">
     </div>
-    <div class="skillbar">
+    <!-- <div class="skillbar">
         <div [style.width.%]="level" [style.background]="color" class="skillbar_inner">
         </div>
         <div class="skillbar_outer">
+        </div>
+    </div> -->
+
+    <div class="container">
+        <div class="progress">
+
+            <div @fadeIn [style.background-color]="secondaryColor" [style.width]="level" [style.background-image]="getGradient()" class="progress-bar">
+            </div>
         </div>
     </div>
 </div>

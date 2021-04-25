@@ -7,18 +7,26 @@
     position: absolute;
     /* height: 100%; */
     z-index: 5;
-    background-image: url(../../assets/img/cropped.jpeg);
+    background: linear-gradient( 0deg, black, #ffffff52, #000000c9), url("../../assets/img/cropped.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
+    top: 0;
+    padding-top: 5rem;
 }
 
 @media (max-width: 970px) {
     .phonewrapper {
-        background: none;
+        background: linear-gradient( 1deg, #00000070, transparent);
     }
     .marvel-device.ipad.landscape {
         left: 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .phonewrapper {
+        position: relative;
     }
 }
 
@@ -57,7 +65,7 @@
     position: absolute;
     top: 6%;
     left: 0;
-    margin-left: -67px;
+    margin-left: -47px;
     transition: all 0.3s ease;
 }
 
@@ -70,4 +78,31 @@
     width: 622.08px!important;
     right: -14%;
     top: -7%;
+}
+
+.home-button {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    color: black;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #25252585;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 0px 1px #000;
+}
+
+@media(max-width:800px) {
+    .home-button {
+        top: unset;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.far {
+    font-size: 2.5rem;
 }

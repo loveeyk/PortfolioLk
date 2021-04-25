@@ -20,7 +20,7 @@
 }
 
 .image-field img {
-    width: 30%!important;
+    width: 12rem!important;
 }
 
 @media (max-width: 802px) {

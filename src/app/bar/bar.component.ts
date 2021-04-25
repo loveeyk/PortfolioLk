@@ -12,11 +12,11 @@ export class BarComponent implements OnInit {
   time: string = ""
 
   constructor() { 
-    // setInterval(() => {
-    //   this.now = new Date()
-    //   // this.test_date = new Date(this.increaseTime(1000000000,this.now)) FOR TESTING FUTURE CLOCK TIME
-    //   this.time =  `${this.checkTime(this.now.getHours())} : ${this.checkTime(this.now.getMinutes())}`
-    // }, 1000);
+    setInterval(() => {
+      this.now = new Date()
+      // this.test_date = new Date(this.increaseTime(1000000000,this.now)) FOR TESTING FUTURE CLOCK TIME
+      this.time =  `${this.checkTime(this.now.getHours())} : ${this.checkTime(this.now.getMinutes())}`
+    }, 1000);
   }
 
   increaseTime(offset_in_ms:number, date:Date){

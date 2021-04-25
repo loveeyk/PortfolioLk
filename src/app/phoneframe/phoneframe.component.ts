@@ -8,7 +8,7 @@ import { Component, OnInit, HostListener, Input } from '@angular/core';
 export class PhoneframeComponent implements OnInit {
   public screenWidth: any;
   public screenHeight: any;
-  public isSlided: boolean = false;
+  public isSlided: boolean = true; //set to True for removing
   constructor() {}
 
   ngOnInit() {

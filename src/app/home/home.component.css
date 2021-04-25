@@ -15,11 +15,6 @@
     top: 0;
 }
 
-.outlined {
-    -webkit-text-stroke: 1px!important;
-    -webkit-text-stroke-color: rgba(0, 0, 0, 0.582)!important;
-}
-
 .icon-wrapper {
     display: inline-flex;
     justify-content: center;
@@ -33,30 +28,30 @@ a {
 }
 
 .icon {
-    border: 0.1px solid #1f1f1f;
-    -webkit-text-stroke-color: black;
     padding: 1.5rem;
     /* min-width: 60%; */
     min-width: 5rem;
     text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
 }
 
 .red {
     background: #ff2c2c;
+    color: #ffea4c;
 }
 
 .blue {
     background: #0057ff;
-}
-
-.orange {
-    background: #e600ff;
+    color: #a3f6ff;
 }
 
 .green {
     background: #4eff8f;
+    color: #423effeb;
 }
 
 .yellow {
+    color: #ff00ea;
     background: yellow;
 }

@@ -15,6 +15,7 @@
         <div class="sleep"></div>
         <div class="bottom-bar">
 
+
         </div>
 
         <div class="volume"></div>
@@ -28,12 +29,16 @@
 
         <div class="screen">
 
-            <a routerLink="/">Home</a>
+
             <app-bar></app-bar>
             <app-hero *ngIf="!isSlided" (notify)="sliderHandler($event)"></app-hero>
             <router-outlet *ngIf=" isSlided"></router-outlet>
 
 
         </div>
+        <a routerLink="/" class="home-button"></a>
+
     </div>
+
+
 </div>

@@ -58,10 +58,37 @@ p {
 }
 
 .fab {
-    font-size: x-large;
+    font-size: xx-large;
+}
+
+.fab:hover {
+    color: rgb(165, 29, 165);
+    transition: 0.3s ease-in;
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+.size {
+    font-size: xx-large;
+}
+
+.size:hover {
+    color: red;
+    transition: 0.3s ease-in;
+}
+
+.content_highlight {
+    animation: mymove 5s infinite;
+    font-weight: bolder;
+}
+
+@keyframes mymove {
+    50% {
+        top: 50px;
+        left: 100px;
+        color: rgb(233, 32, 32);
+    }
 }
